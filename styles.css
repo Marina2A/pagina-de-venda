@@ -15,8 +15,8 @@ body {
 
 /* Estilizando o cabeçalho */
 header {
-    background-color: snow;
-    color:black;
+    background-color: black;
+    color:snow;
     padding: 20px 0;
     text-align: center;
 }
