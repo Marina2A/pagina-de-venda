@@ -15,8 +15,8 @@ body {
 
 /* Estilizando o cabeçalho */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: snow;
+    color:black;
     padding: 20px 0;
     text-align: center;
 }
@@ -48,7 +48,7 @@ header ul li a:hover {
 
 /* Banner */
 .banner {
-    background-color: #ff6347;
+    background-color: #33c8f68e;
     color: #fff;
     padding: 50px 0;
     text-align: center;
@@ -100,7 +100,7 @@ header ul li a:hover {
 }
 
 .produto button {
-    background-color: #f39c12;
+    background-color:deepskyblue;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -112,7 +112,7 @@ header ul li a:hover {
 }
 
 .produto button:hover {
-    background-color: #e67e22;
+    background-color:lightskyblue;
 }
 
 /* Efeito de hover nos produtos */
