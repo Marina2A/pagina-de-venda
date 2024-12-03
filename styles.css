@@ -43,3 +43,45 @@ ul li a {
     font-size: 2.5em;
     margin-bottom: 10px;
 }
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color:white;
+    margin-top: 20px;
+}
+
+.produto {
+    text-align: center;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 30%;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.produto button {
+    background-color:lavenderblush;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color:lavenderblush;
+}
