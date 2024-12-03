@@ -1,87 +1,144 @@
-. {
+/* Reset básico para remover margens e bordas padrão */
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+/* Definindo a fonte padrão */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color:snow;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Estilizando o cabeçalho */
 header {
-    background-color:black;
-    color: white;
-    padding: 10px 0;
-}
-
-ul {
-    list-style: none;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
 }
 
-ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.banner {
-    background-color: black;
-    color:white;
-    text-align: center;
-    padding: 50px 0;
-}
-
-.banner h2 {
-    font-size: 2.5em;
+header .logo h1 {
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-.produtos {
-    display: flex;
-    justify-content: space-around;
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    color: #f39c12;
+}
+
+/* Banner */
+.banner {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Estilizando a seção de produtos */
+#produtos {
     padding: 20px;
-    background-color:white;
-    margin-top: 20px;
+    text-align: center;
+}
+
+#produtos h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 .produto {
-    text-align: center;
-    background-color: #fafafa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: inline-block;
     width: 30%;
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .produto img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .produto h3 {
-    margin: 10px 0;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.produto p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #e74c3c;
 }
 
 .produto button {
-    background-color:lavenderblush;
-    color: black;
+    background-color: #f39c12;
+    color: #fff;
     border: none;
     padding: 10px 20px;
-    font-size: 1em;
     border-radius: 5px;
     cursor: pointer;
+    margin: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .produto button:hover {
-    background-color:lavenderblush;
+    background-color: #e67e22;
+}
+
+/* Efeito de hover nos produtos */
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .produto {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        width: 100%;
+    }
+
+    header ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    header ul {
+        text-align: center;
+    }
 }
