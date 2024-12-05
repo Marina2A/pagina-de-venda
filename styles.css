@@ -46,20 +46,7 @@ header ul li a:hover {
     color:darkcyan;
 }
 
-.carrinho {
-    width: 50px; 
-    height: 50px; 
-    top: 10px; 
-    right: 10px; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    z-index: 1000; 
-  
-}
 
-/* Banner */
 .banner {
     background-color:paleturquoise;
     color: #fff;
@@ -72,7 +59,6 @@ header ul li a:hover {
     margin: 0;
 }
 
-/* Estilizando a seção de produtos */
 #produtos {
     padding: 20px;
     text-align: center;
@@ -154,64 +140,56 @@ header ul li a:hover {
     header ul {
         text-align: center;
     }
-}
 
-#contato {
-    padding: 30px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 20px auto;
-  }
-  
-  #contato h2 {
-    text-align: center;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input, 
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  .form-group textarea {
-    height: 150px;
-  }
-  
-  button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-  }
-  
-  button:hover {
-    background-color: #218838;
-  }
-  
-
+    .contato {
+        padding: 3rem 1rem;
+        background-color: #ecf0f1;
+      }
+      
+      .contato h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      
+      .contato p {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+      
+      .contato form {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin: auto;
+      }
+      
+      .contato form input,
+      .contato form textarea {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+      
+      .contato form button {
+        padding: 1rem 2rem;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .contato form button:hover {
+        background-color: #2980b9;
+      }
+      
+      
 .footer {
     width: 100%;
     text-align: center;
