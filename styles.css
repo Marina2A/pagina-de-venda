@@ -48,7 +48,7 @@ header ul li a:hover {
 
 /* Banner */
 .banner {
-    background-color: #33c8f68e;
+    background-color:paleturquoise;
     color: #fff;
     padding: 50px 0;
     text-align: center;
@@ -96,7 +96,7 @@ header ul li a:hover {
 .produto p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #e74c3c;
+    color:midnightblue;
 }
 
 .produto button {
