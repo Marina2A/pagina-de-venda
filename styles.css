@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -12,9 +13,10 @@ body {
     color: #333;
 }
 
+
 header {
-    background-color: mediumturquoise;
-    color: snow;
+    background-color:mediumturquoise;
+    color:snow;
     padding: 20px 0;
     text-align: center;
 }
@@ -41,11 +43,12 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: darkcyan;
+    color:darkcyan;
 }
 
+
 .banner {
-    background-color: paleturquoise;
+    background-color:paleturquoise;
     color: #fff;
     padding: 50px 0;
     text-align: center;
@@ -67,27 +70,15 @@ header ul li a:hover {
     color: #333;
 }
 
-/* Adicionando Flexbox para o layout dos produtos */
-.produtos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* Espaço entre os produtos */
-    gap: 20px; /* Espaço entre os produtos */
-    padding: 0 10px;
-}
-
-/* Estilo dos produtos */
 .produto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
     width: 30%;
+    margin: 10px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
 }
 
 .produto img {
@@ -104,11 +95,11 @@ header ul li a:hover {
 .produto p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: midnightblue;
+    color:midnightblue;
 }
 
 .produto button {
-    background-color: deepskyblue;
+    background-color:deepskyblue;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -120,24 +111,25 @@ header ul li a:hover {
 }
 
 .produto button:hover {
-    background-color: lightskyblue;
+    background-color:lightskyblue;
 }
+
 
 .produto:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilo para a responsividade */
+
 @media (max-width: 768px) {
     .produto {
-        width: 45%; /* Ajusta os produtos para 45% da largura */
+        width: 45%;
     }
 }
 
 @media (max-width: 480px) {
     .produto {
-        width: 100%; /* Faz os produtos ocuparem toda a largura em telas pequenas */
+        width: 100%;
     }
 
     header ul li {
@@ -148,7 +140,7 @@ header ul li a:hover {
     header ul {
         text-align: center;
     }
-}
+
 
 .footer {
     width: 100%;
